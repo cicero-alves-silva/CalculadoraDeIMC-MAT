@@ -1,14 +1,24 @@
 package com.example.calculadoradeimc;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
+import javafx.scene.control.RadioButton;
+import javafx.scene.control.ToggleGroup;
 
 public class TelaPrincipalController {
-    @FXML
-    private Label welcomeText;
 
     @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+    private ToggleGroup opcoesIMC;
+
+    @FXML
+    private RadioButton rbAdultos;
+
+    @FXML
+    private RadioButton rbIdosos;
+
+    @FXML
+    void cliqueOk(ActionEvent event) {
+
     }
+
 }
