@@ -18,7 +18,12 @@ public class TelaPrincipalController {
 
     @FXML
     void cliqueOk(ActionEvent event) {
-
+        String categoria = "";
+        if (rbAdultos.isSelected()) {
+            categoria = "ADULTO";
+        } else {
+            categoria = "IDOSO";
+        }
+        IMCApplication.trocarTela("CALCULO", categoria);
     }
-
 }
